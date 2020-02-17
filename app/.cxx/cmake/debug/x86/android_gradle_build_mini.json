@@ -1,0 +1,28 @@
+{
+  "buildFiles": [
+    "/home/andrea/Android/Sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake",
+    "/home/andrea/Code/personal/dio-au/oboe/CMakeLists.txt",
+    "/home/andrea/Code/personal/dio-au/app/src/main/cpp/CMakeLists.txt",
+    "/home/andrea/Android/Sdk/ndk/21.0.6113669/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/home/andrea/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/andrea/Code/personal/dio-au/app/.cxx/cmake/debug/x86\" clean"
+  ],
+  "buildTargetsCommand": "/home/andrea/Android/Sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/home/andrea/Code/personal/dio-au/app/.cxx/cmake/debug/x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "oboe-Debug-x86": {
+      "artifactName": "oboe",
+      "buildCommand": "/home/andrea/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/andrea/Code/personal/dio-au/app/.cxx/cmake/debug/x86\" oboe",
+      "abi": "x86",
+      "output": "/home/andrea/Code/personal/dio-au/app/.cxx/cmake/debug/x86/oboe-bin/liboboe.a",
+      "runtimeFiles": []
+    },
+    "megadrone-Debug-x86": {
+      "artifactName": "megadrone",
+      "buildCommand": "/home/andrea/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/andrea/Code/personal/dio-au/app/.cxx/cmake/debug/x86\" megadrone",
+      "abi": "x86",
+      "output": "/home/andrea/Code/personal/dio-au/app/build/intermediates/cmake/debug/obj/x86/libmegadrone.so",
+      "runtimeFiles": []
+    }
+  }
+}

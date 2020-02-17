@@ -1,0 +1,14 @@
+/home/andrea/Code/personal/dio-au/app/.cxx/cmake/debug/x86/CMakeFiles/install/strip.dir
+/home/andrea/Code/personal/dio-au/app/.cxx/cmake/debug/x86/CMakeFiles/install/local.dir
+/home/andrea/Code/personal/dio-au/app/.cxx/cmake/debug/x86/CMakeFiles/install.dir
+/home/andrea/Code/personal/dio-au/app/.cxx/cmake/debug/x86/CMakeFiles/list_install_components.dir
+/home/andrea/Code/personal/dio-au/app/.cxx/cmake/debug/x86/CMakeFiles/rebuild_cache.dir
+/home/andrea/Code/personal/dio-au/app/.cxx/cmake/debug/x86/CMakeFiles/edit_cache.dir
+/home/andrea/Code/personal/dio-au/app/.cxx/cmake/debug/x86/CMakeFiles/megadrone.dir
+/home/andrea/Code/personal/dio-au/app/.cxx/cmake/debug/x86/oboe-bin/CMakeFiles/install.dir
+/home/andrea/Code/personal/dio-au/app/.cxx/cmake/debug/x86/oboe-bin/CMakeFiles/list_install_components.dir
+/home/andrea/Code/personal/dio-au/app/.cxx/cmake/debug/x86/oboe-bin/CMakeFiles/rebuild_cache.dir
+/home/andrea/Code/personal/dio-au/app/.cxx/cmake/debug/x86/oboe-bin/CMakeFiles/edit_cache.dir
+/home/andrea/Code/personal/dio-au/app/.cxx/cmake/debug/x86/oboe-bin/CMakeFiles/install/strip.dir
+/home/andrea/Code/personal/dio-au/app/.cxx/cmake/debug/x86/oboe-bin/CMakeFiles/install/local.dir
+/home/andrea/Code/personal/dio-au/app/.cxx/cmake/debug/x86/oboe-bin/CMakeFiles/oboe.dir
