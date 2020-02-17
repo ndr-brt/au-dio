@@ -1,0 +1,14 @@
+/home/andrea/Code/personal/au-dio/app/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/install/strip.dir
+/home/andrea/Code/personal/au-dio/app/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/install/local.dir
+/home/andrea/Code/personal/au-dio/app/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/install.dir
+/home/andrea/Code/personal/au-dio/app/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/list_install_components.dir
+/home/andrea/Code/personal/au-dio/app/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/home/andrea/Code/personal/au-dio/app/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/edit_cache.dir
+/home/andrea/Code/personal/au-dio/app/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/megadrone.dir
+/home/andrea/Code/personal/au-dio/app/.cxx/cmake/debug/armeabi-v7a/oboe-bin/CMakeFiles/install.dir
+/home/andrea/Code/personal/au-dio/app/.cxx/cmake/debug/armeabi-v7a/oboe-bin/CMakeFiles/list_install_components.dir
+/home/andrea/Code/personal/au-dio/app/.cxx/cmake/debug/armeabi-v7a/oboe-bin/CMakeFiles/rebuild_cache.dir
+/home/andrea/Code/personal/au-dio/app/.cxx/cmake/debug/armeabi-v7a/oboe-bin/CMakeFiles/edit_cache.dir
+/home/andrea/Code/personal/au-dio/app/.cxx/cmake/debug/armeabi-v7a/oboe-bin/CMakeFiles/install/strip.dir
+/home/andrea/Code/personal/au-dio/app/.cxx/cmake/debug/armeabi-v7a/oboe-bin/CMakeFiles/install/local.dir
+/home/andrea/Code/personal/au-dio/app/.cxx/cmake/debug/armeabi-v7a/oboe-bin/CMakeFiles/oboe.dir

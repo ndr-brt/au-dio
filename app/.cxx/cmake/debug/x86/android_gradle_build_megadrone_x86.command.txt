@@ -1,7 +1,7 @@
 Executable : /home/andrea/Android/Sdk/cmake/3.10.2.4988404/bin/ninja
 arguments : 
 -C
-/home/andrea/Code/personal/dio-au/app/.cxx/cmake/debug/x86
+/home/andrea/Code/personal/au-dio/app/.cxx/cmake/debug/x86
 megadrone
 jvmArgs : 
 

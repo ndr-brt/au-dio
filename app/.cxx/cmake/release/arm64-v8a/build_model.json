@@ -5,9 +5,9 @@
     "environmentVariables": []
   },
   "cmake": {
-    "cmakeArtifactsBaseFolder": "/home/andrea/Code/personal/dio-au/app/.cxx/cmake/release/arm64-v8a",
-    "cmakeServerLogFile": "/home/andrea/Code/personal/dio-au/app/.cxx/cmake/release/arm64-v8a/cmake_server_log.txt",
-    "cmakeWrappingBaseFolder": "/home/andrea/Code/personal/dio-au/app/.cxx/cxx/release/arm64-v8a",
+    "cmakeArtifactsBaseFolder": "/home/andrea/Code/personal/au-dio/app/.cxx/cmake/release/arm64-v8a",
+    "cmakeServerLogFile": "/home/andrea/Code/personal/au-dio/app/.cxx/cmake/release/arm64-v8a/cmake_server_log.txt",
+    "cmakeWrappingBaseFolder": "/home/andrea/Code/personal/au-dio/app/.cxx/cxx/release/arm64-v8a",
     "effectiveConfiguration": {
       "name": "traditional-android-studio-cmake-environment",
       "description": "Composite reified CMakeSettings configuration",
@@ -15,7 +15,7 @@
       "inheritEnvironments": [
         "ndk"
       ],
-      "buildRoot": "/home/andrea/Code/personal/dio-au/app/.cxx/cmake/release/arm64-v8a",
+      "buildRoot": "/home/andrea/Code/personal/au-dio/app/.cxx/cmake/release/arm64-v8a",
       "cmakeToolchain": "/home/andrea/Android/Sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake",
       "cmakeExecutable": "/home/andrea/Android/Sdk/cmake/3.10.2.4988404/bin/cmake",
       "variables": [
@@ -25,7 +25,7 @@
         },
         {
           "name": "CMAKE_FIND_ROOT_PATH",
-          "value": "/home/andrea/Code/personal/dio-au/app/.cxx/cmake/release/prefab/arm64-v8a/prefab"
+          "value": "/home/andrea/Code/personal/au-dio/app/.cxx/cmake/release/prefab/arm64-v8a/prefab"
         },
         {
           "name": "CMAKE_BUILD_TYPE",
@@ -61,7 +61,7 @@
         },
         {
           "name": "CMAKE_LIBRARY_OUTPUT_DIRECTORY",
-          "value": "/home/andrea/Code/personal/dio-au/app/build/intermediates/cmake/release/obj/arm64-v8a"
+          "value": "/home/andrea/Code/personal/au-dio/app/build/intermediates/cmake/release/obj/arm64-v8a"
         },
         {
           "name": "CMAKE_MAKE_PROGRAM",
@@ -78,14 +78,14 @@
       ]
     }
   },
-  "cxxBuildFolder": "/home/andrea/Code/personal/dio-au/app/.cxx/cmake/release/arm64-v8a",
+  "cxxBuildFolder": "/home/andrea/Code/personal/au-dio/app/.cxx/cmake/release/arm64-v8a",
   "info": {
     "abi": "ARM64_V8A",
     "bitness": 64,
     "deprecated": false,
     "default": true
   },
-  "originalCxxBuildFolder": "/home/andrea/Code/personal/dio-au/app/.cxx/cmake/release/arm64-v8a",
+  "originalCxxBuildFolder": "/home/andrea/Code/personal/au-dio/app/.cxx/cmake/release/arm64-v8a",
   "variant": {
     "buildSystemArgumentList": [],
     "buildTargetSet": [],
@@ -103,12 +103,12 @@
         "ninjaExe": "/home/andrea/Android/Sdk/cmake/3.10.2.4988404/bin/ninja"
       },
       "cmakeToolchainFile": "/home/andrea/Android/Sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake",
-      "cxxFolder": "/home/andrea/Code/personal/dio-au/app/.cxx",
+      "cxxFolder": "/home/andrea/Code/personal/au-dio/app/.cxx",
       "gradleModulePathName": ":app",
-      "intermediatesFolder": "/home/andrea/Code/personal/dio-au/app/build/intermediates",
-      "makeFile": "/home/andrea/Code/personal/dio-au/app/src/main/cpp/CMakeLists.txt",
-      "moduleBuildFile": "/home/andrea/Code/personal/dio-au/app/build.gradle",
-      "moduleRootFolder": "/home/andrea/Code/personal/dio-au/app",
+      "intermediatesFolder": "/home/andrea/Code/personal/au-dio/app/build/intermediates",
+      "makeFile": "/home/andrea/Code/personal/au-dio/app/src/main/cpp/CMakeLists.txt",
+      "moduleBuildFile": "/home/andrea/Code/personal/au-dio/app/build.gradle",
+      "moduleRootFolder": "/home/andrea/Code/personal/au-dio/app",
       "ndkDefaultAbiList": [
         "ARMEABI_V7A",
         "ARM64_V8A",
@@ -172,12 +172,12 @@
       "ndkDefaultStl": "LIBCXX_STATIC",
       "ndkVersion": "21.0.6113669",
       "project": {
-        "compilerSettingsCacheFolder": "/home/andrea/Code/personal/dio-au/.cxx",
-        "cxxFolder": "/home/andrea/Code/personal/dio-au/.cxx",
+        "compilerSettingsCacheFolder": "/home/andrea/Code/personal/au-dio/.cxx",
+        "cxxFolder": "/home/andrea/Code/personal/au-dio/.cxx",
         "isBuildOnlyTargetAbiEnabled": true,
         "isCmakeBuildCohabitationEnabled": false,
         "isNativeCompilerSettingsCacheEnabled": false,
-        "rootBuildGradleFolder": "/home/andrea/Code/personal/dio-au",
+        "rootBuildGradleFolder": "/home/andrea/Code/personal/au-dio",
         "sdkFolder": "/home/andrea/Android/Sdk",
         "isPrefabEnabled": false
       },
@@ -194,7 +194,7 @@
         "SYSTEM": {}
       }
     },
-    "objFolder": "/home/andrea/Code/personal/dio-au/app/build/intermediates/cmake/release/obj",
+    "objFolder": "/home/andrea/Code/personal/au-dio/app/build/intermediates/cmake/release/obj",
     "variantName": "release",
     "validAbiList": [
       "ARMEABI_V7A",
@@ -202,8 +202,8 @@
       "X86",
       "X86_64"
     ],
-    "prefabDirectory": "/home/andrea/Code/personal/dio-au/app/.cxx/cmake/release/prefab",
+    "prefabDirectory": "/home/andrea/Code/personal/au-dio/app/.cxx/cmake/release/prefab",
     "prefabPackageDirectoryList": []
   },
-  "prefabFolder": "/home/andrea/Code/personal/dio-au/app/.cxx/cmake/release/prefab/arm64-v8a"
+  "prefabFolder": "/home/andrea/Code/personal/au-dio/app/.cxx/cmake/release/prefab/arm64-v8a"
 }
