@@ -28,12 +28,12 @@
 
 using namespace oboe;
 
-class MegaDroneEngine : public IRestartable {
+class SynthEngine : public IRestartable {
 
 public:
-    MegaDroneEngine(std::vector<int> cpuIds);
+    SynthEngine(std::vector<int> cpuIds);
 
-    virtual ~MegaDroneEngine() = default;
+    virtual ~SynthEngine() = default;
 
     void tap(bool isDown);
 

@@ -1,5 +1,5 @@
 #include <memory>
-#include "MegaDroneEngine.h"
+#include "SynthEngine.h"
 
 /**
  * Main audio engine for the MegaDrone sample. It is responsible for:
@@ -13,22 +13,22 @@
  *
  * @param cpuIds
  */
-MegaDroneEngine::MegaDroneEngine(std::vector<int> cpuIds) {
+SynthEngine::SynthEngine(std::vector<int> cpuIds) {
 
     createCallback(cpuIds);
     start();
 }
 
-void MegaDroneEngine::tap(bool isDown) {
+void SynthEngine::tap(bool isDown) {
     mAudioSource->tap(isDown);
 }
 
-void MegaDroneEngine::restart() {
+void SynthEngine::restart() {
     start();
 }
 
 // Create the playback stream
-oboe::Result MegaDroneEngine::createPlaybackStream() {
+oboe::Result SynthEngine::createPlaybackStream() {
     oboe::AudioStreamBuilder builder;
     return builder.setSharingMode(oboe::SharingMode::Exclusive)
             ->setPerformanceMode(oboe::PerformanceMode::LowLatency)
@@ -38,7 +38,7 @@ oboe::Result MegaDroneEngine::createPlaybackStream() {
 }
 
 // Create the callback and set its thread affinity to the supplied CPU core IDs
-void MegaDroneEngine::createCallback(std::vector<int> cpuIds){
+void SynthEngine::createCallback(std::vector<int> cpuIds){
     // Create the callback, we supply ourselves as the parent so that we can restart the stream
     // when it's disconnected
     mCallback = std::make_unique<DefaultAudioStreamCallback>(*this);
@@ -49,7 +49,7 @@ void MegaDroneEngine::createCallback(std::vector<int> cpuIds){
     mCallback->setThreadAffinityEnabled(true);
 }
 
-void MegaDroneEngine::start(){
+void SynthEngine::start(){
     auto result = createPlaybackStream();
     if (result == Result::OK){
         // Create our synthesizer audio source using the properties of the stream

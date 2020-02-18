@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 
-#include "MegaDroneEngine.h"
+#include "SynthEngine.h"
 
 
 std::vector<int> convertJavaArrayToVector(JNIEnv *env, jintArray intArray) {
@@ -31,7 +31,7 @@ Java_ndr_brt_audio_MainActivity_startEngine(JNIEnv *env, jobject /*unused*/,
                                                          jintArray jCpuIds) {
     std::vector<int> cpuIds = convertJavaArrayToVector(env, jCpuIds);
     LOGD("cpu ids size: %d", static_cast<int>(cpuIds.size()));
-    MegaDroneEngine  *engine = new MegaDroneEngine(std::move(cpuIds));
+    SynthEngine  *engine = new SynthEngine(std::move(cpuIds));
     LOGD("Engine Started");
     return reinterpret_cast<jlong>(engine);
 }
@@ -39,7 +39,7 @@ Java_ndr_brt_audio_MainActivity_startEngine(JNIEnv *env, jobject /*unused*/,
 JNIEXPORT void JNICALL
 Java_ndr_brt_audio_MainActivity_stopEngine(JNIEnv *env, jobject instance,
         jlong jEngineHandle) {
-    auto engine = reinterpret_cast<MegaDroneEngine*>(jEngineHandle);
+    auto engine = reinterpret_cast<SynthEngine*>(jEngineHandle);
     if (engine) {
         delete engine;
     } else {
@@ -52,7 +52,7 @@ JNIEXPORT void JNICALL
 Java_ndr_brt_audio_MainActivity_tap(JNIEnv *env, jobject instance,
         jlong jEngineHandle, jboolean isDown) {
 
-    auto *engine = reinterpret_cast<MegaDroneEngine*>(jEngineHandle);
+    auto *engine = reinterpret_cast<SynthEngine*>(jEngineHandle);
     if (engine) {
         engine->tap(isDown);
     } else {

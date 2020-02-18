@@ -18,7 +18,7 @@ include_directories(${OBOE_DIR}/include ${OBOE_DIR}/samples/shared ${OBOE_DIR}/s
 
 add_library( megadrone SHARED
         native-lib.cpp
-        MegaDroneEngine.cpp
+        SynthEngine.cpp
         )
 
 target_link_libraries( megadrone log oboe )

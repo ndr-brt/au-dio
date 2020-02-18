@@ -52,3 +52,6 @@
 3562	4521	1582026916	oboe-bin/CMakeFiles/oboe.dir/src/opensles/OpenSLESUtilities.cpp.o	b4464430ffb91499
 4521	4659	1582026916	oboe-bin/liboboe.a	dbcf2f384b6175b
 4659	4858	1582026917	/home/andrea/Code/personal/au-dio/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmegadrone.so	fbdb3c056fb392b4
+3	672	1582027059	CMakeFiles/megadrone.dir/native-lib.cpp.o	3606e3016430db62
+3	766	1582027060	CMakeFiles/megadrone.dir/SynthEngine.cpp.o	af1afa8de76e81ba
+766	957	1582027060	/home/andrea/Code/personal/au-dio/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmegadrone.so	72b5b282a3e09ec9

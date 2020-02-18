@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-
         if (event.getAction() == MotionEvent.ACTION_DOWN){
             tap(mEngineHandle, true);
         } else if (event.getAction() == MotionEvent.ACTION_UP){
