@@ -1,5 +1,5 @@
-#ifndef MEGADRONE_SYNTH_H
-#define MEGADRONE_SYNTH_H
+#ifndef AUDIO_SYNTH_H
+#define AUDIO_SYNTH_H
 
 #include <array>
 #include <TappableAudioSource.h>
@@ -18,7 +18,7 @@ class Synth : public TappableAudioSource {
 public:
 
     Synth(int32_t sampleRate, int32_t channelCount) :
-    TappableAudioSource(sampleRate, channelCount) {
+            TappableAudioSource(sampleRate, channelCount) {
         for (int i = 0; i < kNumOscillators; ++i) {
             mOscs[i].setSampleRate(mSampleRate);
             mOscs[i].setFrequency(kOscBaseFrequency + (static_cast<float>(i) / kOscDivisor));
@@ -26,7 +26,7 @@ public:
             mMixer.addTrack(&mOscs[i]);
         }
         if (mChannelCount == oboe::ChannelCount::Stereo) {
-            mOutputStage =  &mConverter;
+            mOutputStage = &mConverter;
         } else {
             mOutputStage = &mMixer;
         }
@@ -41,8 +41,8 @@ public:
         mOutputStage->renderAudio(audioData, numFrames);
     };
 
-    virtual ~Synth() {
-    }
+    virtual ~Synth() {}
+
 private:
     // Rendering objects
     std::array<Oscillator, kNumOscillators> mOscs;
@@ -52,4 +52,4 @@ private:
 };
 
 
-#endif //MEGADRONE_SYNTH_H
+#endif //AUDIO_SYNTH_H

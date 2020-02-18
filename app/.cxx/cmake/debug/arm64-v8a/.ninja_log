@@ -55,3 +55,6 @@
 3	672	1582027059	CMakeFiles/megadrone.dir/native-lib.cpp.o	3606e3016430db62
 3	766	1582027060	CMakeFiles/megadrone.dir/SynthEngine.cpp.o	af1afa8de76e81ba
 766	957	1582027060	/home/andrea/Code/personal/au-dio/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmegadrone.so	72b5b282a3e09ec9
+2	953	1582027228	CMakeFiles/megadrone.dir/native-lib.cpp.o	3606e3016430db62
+2	1167	1582027229	CMakeFiles/megadrone.dir/SynthEngine.cpp.o	af1afa8de76e81ba
+1167	1366	1582027229	/home/andrea/Code/personal/au-dio/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmegadrone.so	72b5b282a3e09ec9
