@@ -24,9 +24,11 @@ public:
     // from IRestartable
     virtual void restart() override;
 
+    void setFrequency(float value);
+
 private:
     oboe::ManagedStream mStream;
-    std::shared_ptr<TappableAudioSource> mAudioSource;
+    std::shared_ptr<AudioSource> mAudioSource;
     std::unique_ptr<DefaultAudioStreamCallback> mCallback;
 
     oboe::Result createPlaybackStream();

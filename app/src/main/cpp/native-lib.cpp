@@ -70,3 +70,13 @@ Java_ndr_brt_audio_MainActivity_native_1setDefaultStreamValues(JNIEnv *env,
 }
 
 } // extern "C"
+extern "C"
+JNIEXPORT void JNICALL
+Java_ndr_brt_audio_MainActivity_setFrequency(JNIEnv *env, jobject thiz, jlong jEngineHandle, jfloat frequency) {
+    auto engine = reinterpret_cast<SynthEngine*>(jEngineHandle);
+    if (engine) {
+        engine->setFrequency(frequency);
+    } else {
+        LOGE("Engine handle is invalid, call createEngine() to create a new one");
+    }
+}

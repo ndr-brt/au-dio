@@ -1,6 +1,7 @@
 package ndr.brt.audio;
 
 import android.content.Context;
+import android.graphics.Point;
 import android.media.AudioManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -17,8 +18,11 @@ public class MainActivity extends AppCompatActivity {
     private native long startEngine(int[] cpuIds);
     private native void stopEngine(long engineHandle);
     private native void tap(long engineHandle, boolean isDown);
+    private native void setFrequency(long engineHandle, float frequency);
 
     private static native void native_setDefaultStreamValues(int sampleRate, int framesPerBurst);
+
+    private final Point screenSize = new Point();
 
     // Used to load the 'native-lib' library on application startup.
     static {
@@ -30,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setDefaultStreamValues(this);
+        getWindowManager().getDefaultDisplay().getSize(screenSize);
     }
 
     @Override
@@ -46,6 +51,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+        float frequency = event.getY();
+        setFrequency(mEngineHandle, frequency);
+
+
         if (event.getAction() == MotionEvent.ACTION_DOWN){
             tap(mEngineHandle, true);
         } else if (event.getAction() == MotionEvent.ACTION_UP){

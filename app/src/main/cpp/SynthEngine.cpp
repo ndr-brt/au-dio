@@ -60,3 +60,7 @@ void SynthEngine::start(){
         LOGE("Failed to create the playback stream. Error: %s", convertToText(result));
     }
 }
+
+void SynthEngine::setFrequency(float value) {
+    mAudioSource->setFrequency(value);
+}
