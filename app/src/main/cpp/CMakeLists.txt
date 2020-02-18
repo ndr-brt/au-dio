@@ -16,13 +16,13 @@ include_directories(${OBOE_DIR}/include ${OBOE_DIR}/samples/shared ${OBOE_DIR}/s
 
 ### END OBOE INCLUDE SECTION ###
 
-add_library( megadrone SHARED
+add_library( synth SHARED
         native-lib.cpp
         SynthEngine.cpp
         )
 
-target_link_libraries( megadrone log oboe )
+target_link_libraries( synth log oboe )
 
 # Enable optimization flags: if having problems with source level debugging,
 # disable -Ofast ( and debug ), re-enable it after done debugging.
-target_compile_options(megadrone PRIVATE -Wall -Werror -Ofast)
+target_compile_options(synth PRIVATE -Wall -Werror -Ofast)
