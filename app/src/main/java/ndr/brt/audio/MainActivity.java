@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        float frequency = event.getY();
-        setFrequency(mEngineHandle, frequency);
+        float frequency = event.getY() / screenSize.y;
+        setFrequency(mEngineHandle, frequency * 20000);
 
 
         if (event.getAction() == MotionEvent.ACTION_DOWN){
