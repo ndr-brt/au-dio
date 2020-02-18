@@ -40,8 +40,4 @@ For stereo chains a mono to stereo converter is added to the end of the chain:
 
     Oscillators->Mixer->MonoToStereo
  
-The compiler optimization flag `-Ofast` can be found in [CMakeLists.txt](CMakeLists.txt). 
- 
-Screenshots
------------
-![megadrone-screenshot](megadrone-screenshot.png)
+The compiler optimization flag `-Ofast` can be found in [CMakeLists.txt](CMakeLists.txt).

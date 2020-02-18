@@ -2,7 +2,7 @@
 #include "SynthEngine.h"
 
 /**
- * Main audio engine for the MegaDrone sample. It is responsible for:
+ * Main audio engine. It is responsible for:
  *
  * - Creating the callback object which will be supplied when constructing the audio stream
  * - Setting the CPU core IDs to which the callback thread should bind to

@@ -1,5 +1,5 @@
-#ifndef MEGADRONE_ENGINE_H
-#define MEGADRONE_ENGINE_H
+#ifndef SYNTH_ENGINE_H
+#define SYNTH_ENGINE_H
 
 
 #include <oboe/Oboe.h>
@@ -35,4 +35,4 @@ private:
 };
 
 
-#endif //MEGADRONE_ENGINE_H
+#endif //SYNTH_ENGINE_H
