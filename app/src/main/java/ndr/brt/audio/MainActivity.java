@@ -8,12 +8,17 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import static ndr.brt.audio.CoordinateToFrequency.coordinateToFrequency;
+
+@RequiresApi(api = Build.VERSION_CODES.N)
 public class MainActivity extends AppCompatActivity {
 
     private final String TAG = MainActivity.class.toString();
     private static long mEngineHandle = 0;
+    private final CoordinateToFrequency coordinateToFrequency = coordinateToFrequency();
 
     private native long startEngine(int[] cpuIds);
     private native void stopEngine(long engineHandle);
@@ -51,9 +56,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        float frequency = event.getY() / screenSize.y;
-        setFrequency(mEngineHandle, frequency * 20000);
-
+        float frequency = coordinateToFrequency.apply(event.getY(), screenSize.y);
+        setFrequency(mEngineHandle, frequency);
 
         if (event.getAction() == MotionEvent.ACTION_DOWN){
             tap(mEngineHandle, true);
