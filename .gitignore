@@ -9,4 +9,4 @@
 .externalNativeBuild
 test/build
 .idea
-app/.cxx/
+.cxx
