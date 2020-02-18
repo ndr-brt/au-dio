@@ -16,7 +16,7 @@ public class CoordinateToFrequencyTest {
 
     @Test
     public void at_zero_the_frequency_is_at_maximum() {
-        assertEquals(Float.valueOf(20000), coordinateToFrequency.apply(0f, 100));
+        assertEquals(Float.valueOf(10000), coordinateToFrequency.apply(0f, 100));
     }
 
     @Test
@@ -26,6 +26,6 @@ public class CoordinateToFrequencyTest {
 
     @Test
     public void scale_should_be_logaritmic() {
-        assertEquals(Float.valueOf(300f), coordinateToFrequency.apply(50f, 100));
+        assertEquals(Float.valueOf(1480.5566f), coordinateToFrequency.apply(50f, 100));
     }
 }
