@@ -1,19 +1,3 @@
-/*
- * Copyright 2018 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 #include <jni.h>
 #include <string>
 #include <vector>
@@ -43,7 +27,7 @@ extern "C" {
  * @return a pointer to the audio engine. This should be passed to other methods
  */
 JNIEXPORT jlong JNICALL
-Java_com_example_oboe_megadrone_MainActivity_startEngine(JNIEnv *env, jobject /*unused*/,
+Java_ndr_brt_audio_MainActivity_startEngine(JNIEnv *env, jobject /*unused*/,
                                                          jintArray jCpuIds) {
     std::vector<int> cpuIds = convertJavaArrayToVector(env, jCpuIds);
     LOGD("cpu ids size: %d", static_cast<int>(cpuIds.size()));
@@ -53,7 +37,7 @@ Java_com_example_oboe_megadrone_MainActivity_startEngine(JNIEnv *env, jobject /*
 }
 
 JNIEXPORT void JNICALL
-Java_com_example_oboe_megadrone_MainActivity_stopEngine(JNIEnv *env, jobject instance,
+Java_ndr_brt_audio_MainActivity_stopEngine(JNIEnv *env, jobject instance,
         jlong jEngineHandle) {
     auto engine = reinterpret_cast<MegaDroneEngine*>(jEngineHandle);
     if (engine) {
@@ -65,7 +49,7 @@ Java_com_example_oboe_megadrone_MainActivity_stopEngine(JNIEnv *env, jobject ins
 
 
 JNIEXPORT void JNICALL
-Java_com_example_oboe_megadrone_MainActivity_tap(JNIEnv *env, jobject instance,
+Java_ndr_brt_audio_MainActivity_tap(JNIEnv *env, jobject instance,
         jlong jEngineHandle, jboolean isDown) {
 
     auto *engine = reinterpret_cast<MegaDroneEngine*>(jEngineHandle);
@@ -77,7 +61,7 @@ Java_com_example_oboe_megadrone_MainActivity_tap(JNIEnv *env, jobject instance,
 }
 
 JNIEXPORT void JNICALL
-Java_com_example_oboe_megadrone_MainActivity_native_1setDefaultStreamValues(JNIEnv *env,
+Java_ndr_brt_audio_MainActivity_native_1setDefaultStreamValues(JNIEnv *env,
                                                                             jclass type,
                                                                             jint sampleRate,
                                                                             jint framesPerBurst) {
